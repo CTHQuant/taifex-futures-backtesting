@@ -39,7 +39,7 @@
 - Max Drawdown：**-5.79%**
 - Time in Market：**100%（無空窗）**
 
-![Portfolio Summary](portfolio_summary.png)
+![Portfolio Summary](graph/portfolio_summary.png)
 
 ---
 
@@ -48,7 +48,7 @@
 - 左圖：每日報酬直方圖  
 - 右圖：報酬密度估計（偏態右移）
 
-![Return Histogram](return_distribution.png)
+![Return Histogram](graph/return_distribution.png)
 
 ---
 
@@ -57,7 +57,7 @@
 - 進場邏輯為偏空（BSR < 1）
 - 成交量持續強勢，累積報酬明顯擴張
 
-![Min PnL Day](max_pnl_day.png)
+![Min PnL Day](graph/max_pnl_day.png)
 
 ---
 
@@ -66,7 +66,7 @@
 - 當日雖符合偏多條件，但走勢快速反轉
 - 提醒需加入成交量轉折與止損更精準判斷
 
-![Min PnL Day](min_pnl_day.png)
+![Min PnL Day](graph/min_pnl_day.png)
 
 ---
 
