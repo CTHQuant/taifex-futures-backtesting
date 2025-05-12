@@ -1,8 +1,6 @@
 #  TAIEX Futures Backtesting Project 台指期策略回測專案
 
 本專案展示一個以 **台指期 (TXF)** 為標的的量化策略回測流程，涵蓋了資料蒐集、參數優化與績效評估，使用 Python 與 Jupyter Notebook 撰寫，並搭配 [Shioaji API by 永豐金證券](https://sinotrade.github.io/) 取得即時與歷史資料。
-Train period: 2024/01/01~2024/12/31 
-Test period: 2025/01/01~2025/05/05
 
 ---
 
