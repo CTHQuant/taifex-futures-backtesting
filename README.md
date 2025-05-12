@@ -16,18 +16,95 @@
 
 ## 策略邏輯
 
-- **進場邏輯**
-  - 依據權值股 + 台積電 K 棒是否紅K
-  - 內外盤比作為多空方向判斷
-- **停損 / 停利邏輯**
-  - 動態依成交量比等級設定 TP / SL 點數偏移
-  - 持倉最大至收盤前自動平倉
+- **進場條件：**
+  - 台積電紅K、前十大權值股紅K 數量過半
+  - 內外盤成交量比（BSR）超過閾值
+
+- **出場條件：**
+  - 達 TP 或 SL（依累積成交量比設定不同點數）
+  - 或至收盤強制平倉
+
+- **停利停損邏輯：**
+  - 累積成交量比高 → 大偏移 TP/SL；反之則保守
+  - 提升順勢操作的風險報酬比
 
 ---
 
-## 環境需求
+## 總體績效摘要 Performance Summary
+
+- 回測區間：**2025-01-02 ~ 2025-05-05**
+- 年化報酬（CAGR）：**91.8%**
+- 累積報酬：**+37.42%**
+- Sharpe Ratio：**5.53**
+- Max Drawdown：**-5.79%**
+- Time in Market：**100%（無空窗）**
+
+![Portfolio Summary](portfolio_summary.png)
+
+---
+
+## 報酬分布分析 Return Distribution
+
+- 左圖：每日報酬直方圖  
+- 右圖：報酬密度估計（偏態右移）
+
+![Return Histogram](return_distribution.png)
+
+---
+
+## 單日最大獲利分析 - 2025-05-05
+
+- 進場邏輯為偏空（BSR < 1）
+- 成交量持續強勢，累積報酬明顯擴張
+
+![Min PnL Day](min_pnl_day.png)
+
+---
+
+## 單日最大虧損分析 - 2025-03-25
+
+- 當日雖符合偏多條件，但走勢快速反轉
+- 提醒需加入成交量轉折與止損更精準判斷
+
+![Min PnL Day](PnL Breakdown - 2025-03-25.png)
+
+---
+
+## 詳細績效報表（摘要）
+
+Start Period 2025-01-02
+End Period 2025-05-05
+Cumulative Return 37.42%
+CAGR 91.8%
+Sharpe 5.53
+Sortino 13.67
+Max Drawdown -5.79%
+Payoff Ratio 1.81
+Profit Factor 2.47
+Outlier Win Ratio 2.73
+Time in Market 100.0%
+Recovery Factor 5.68
+Ulcer Index 0.03
+Serenity Index 5.59
+
+---
+
+## 技術環境 Environment
 
 - Python 3.9+
 - 套件需求：
   ```bash
   pip install pandas polars numpy matplotlib shioaji
+
+---
+
+## 作者 Author
+
+莊宗瀚 (Tsung Han Chuang)  
+[GitHub](https://github.com/CTHQuant) ｜ [LinkedIn](https://linkedin.com/in/宗瀚-莊-1a8588358/)
+
+---
+
+## License
+
+此專案為個人學習與展示用途，不構成任何投資建議。
