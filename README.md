@@ -57,7 +57,7 @@
 - 進場邏輯為偏空（BSR < 1）
 - 成交量持續強勢，累積報酬明顯擴張
 
-![Min PnL Day](min_pnl_day.png)
+![Min PnL Day](max_pnl_day.png)
 
 ---
 
@@ -66,26 +66,28 @@
 - 當日雖符合偏多條件，但走勢快速反轉
 - 提醒需加入成交量轉折與止損更精準判斷
 
-![Min PnL Day](PnL Breakdown - 2025-03-25.png)
+![Min PnL Day](min_pnl_day.png)
 
 ---
 
 ## 詳細績效報表（摘要）
 
-Start Period 2025-01-02
-End Period 2025-05-05
-Cumulative Return 37.42%
-CAGR 91.8%
-Sharpe 5.53
-Sortino 13.67
-Max Drawdown -5.79%
-Payoff Ratio 1.81
-Profit Factor 2.47
-Outlier Win Ratio 2.73
-Time in Market 100.0%
-Recovery Factor 5.68
-Ulcer Index 0.03
-Serenity Index 5.59
+| 指標項目           | 數值        |
+|--------------------|-------------|
+| Start Period        | 2025-01-02  |
+| End Period          | 2025-05-05  |
+| Cumulative Return   | 37.42%      |
+| CAGR                | 91.8%       |
+| Sharpe              | 5.53        |
+| Sortino             | 13.67       |
+| Max Drawdown        | -5.79%      |
+| Payoff Ratio        | 1.81        |
+| Profit Factor       | 2.47        |
+| Outlier Win Ratio   | 2.73        |
+| Time in Market      | 100.0%      |
+| Recovery Factor     | 5.68        |
+| Ulcer Index         | 0.03        |
+| Serenity Index      | 5.59        |
 
 ---
 
